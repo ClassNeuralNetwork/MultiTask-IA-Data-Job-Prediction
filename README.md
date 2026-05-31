@@ -12,4 +12,4 @@ A neural network-based simulator that, given a professional's profile, predicts 
 
 ## Neural Network Problem
 
-This is a multi-regression problem: the network receives characteristics of the candidate's profile and predicts three goals simultaneously: salary_in_USD, bonus_USD, work mode. Predicting all three together is superior to separate models because these targets are correlated in the real market (high salary tends to go hand in hand with less remote flexibility, for example). The network learns this codependency automatically during training.
+This is a multiple regression problem: the model receives characteristics of the candidate profile and predicts three objectives simultaneously: salary_in_USD, bonus_in_USD, and work mode. Predicting all three at once, besides being laborious, will cause problems due to the different nature of salary regression problems and the multi-class classification of company size and work mode.
